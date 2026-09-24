@@ -45,7 +45,7 @@ A composição mantém a navegação lateral e a apresentação pessoal com foto
 - Grafite e branco, com vermelho nos destaques.
 - Nome **Lucas** em branco e sobrenome completo **Nakano Ernani** em vermelho.
 - Navegação lateral no computador e horizontal em telas menores.
-- Três projetos em cards pretos, com resumo, tecnologias e detalhes expansíveis sobre as verificações.
+- Quatro projetos em cards pretos, com resumo, tecnologias e detalhes expansíveis sobre as verificações.
 - Sem trechos de código na página; botões levam aos testes no GitHub.
 - Logos das ferramentas e do LinkedIn e GitHub armazenados no próprio projeto.
 - Nome e identificação do portfólio maiores; “QA + Automação” menor.
@@ -56,7 +56,7 @@ A composição mantém a navegação lateral e a apresentação pessoal com foto
 
 ## Precisão do conteúdo e português
 
-Posicionamento mantido como **QA Pleno**, conforme o currículo. Os exemplos representam três cenários de estudo, não projetos comerciais. A API externa fornece os dados dos formulários; esses cenários não constituem uma suíte independente de testes de API. A configuração de integração contínua é descrita sem afirmar que as execuções atuais passaram.
+Posicionamento mantido como **QA Pleno**, conforme o currículo. O portfólio reúne três cenários de automação e um estudo de testes funcionais manuais. Não são apresentados como projetos comerciais. A API externa fornece os dados dos formulários; esses cenários não constituem uma suíte independente de testes de API. A configuração de integração contínua é descrita sem afirmar que as execuções atuais passaram.
 
 Ortografia, concordância e consistência dos textos em português foram revisadas. Nomes de ferramentas e mensagens exatas dos sistemas de demonstração permanecem no idioma original. Os detalhes de cada projeto explicam o alcance das verificações existentes.
 
@@ -83,3 +83,7 @@ Cards de projetos, botões do GitHub e controles sociais usam superfícies preta
 ## Navegação e contato
 
 O menu destaca a seção clicada durante a rolagem suave e acompanha a posição da página. Ao chegar ao fim, Contato permanece ativo mesmo quando a seção não alcança o topo da tela. O título “Vamos conversar?” usa uma escala menor no computador e no celular.
+
+## Estudo de simulação de crédito
+
+A seção Projetos de QA inclui o teste técnico em https://github.com/lucasnakanoernani/qa-credit-simulation-test. O card diferencia casos planejados de resultados de execução, aponta os relatos históricos de bugs e vincula o fluxo proposto. A revisão da documentação técnica foi conferida no repositório remoto. O card também permite consultar o registro de execução e os diagramas do processo atual e proposto.
