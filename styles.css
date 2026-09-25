@@ -76,3 +76,63 @@ details{margin-top:1.2rem;border-top:1px solid var(--line)}summary{cursor:pointe
 @media(max-width:800px){.hero-identity{gap:1.5rem}.hero .hero-identity h1{font-size:clamp(2.2rem,6vw,3.5rem)}.hero-avatar{width:clamp(120px,22vw,190px);padding:5px}}
 @media(max-width:480px){.hero-identity{gap:1rem;margin-block:1.4rem 1.8rem}.hero .hero-identity h1{font-size:clamp(1.85rem,7.8vw,2.35rem);line-height:1.12}.hero-avatar{width:100px;padding:4px}.hero h1 span{margin-top:.14em}.hero{min-height:600px}}
 @media(max-width:350px){.hero-avatar{width:86px}.hero-identity{gap:.75rem}.hero .hero-identity h1{font-size:1.85rem}}
+
+/* Menu sempre visível no celular e espaço para os títulos das seções. */
+@media (max-width: 800px) {
+  html { scroll-padding-top: calc(var(--mobile-nav-height, 7rem) + 1.5rem); }
+  .rail {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--bg);
+    box-shadow: 0 8px 24px #0003;
+    padding-top: calc(1.2rem + env(safe-area-inset-top, 0px));
+  }
+  .skip { z-index: 30; }
+}
+@media (max-width: 450px) {
+  .rail { padding-top: calc(1rem + env(safe-area-inset-top, 0px)); }
+}
+.whatsapp-logo { flex-shrink: 0; }
+
+/* WhatsApp neutro; destaque em vermelho apenas no hover. */
+.contact-links .whatsapp-link { color: var(--text); border-color: #383838; }
+.contact-links .whatsapp-link:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Download do currículo: link discreto, com área confortável para toque. */
+.resume-link {
+  display: flex;
+  width: max-content;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .5rem .15rem;
+  color: #c7c7c7;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: .8125rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color .18s ease;
+}
+.resume-link span { color: inherit; }
+.resume-icon { width: 16px; height: 16px; flex: 0 0 16px; }
+.resume-label { white-space: nowrap; }
+.resume-link:hover { color: var(--accent); background: transparent; }
+.resume-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 800px) {
+  .resume-link { max-width: calc(100% - 3rem); margin: 1rem 1.5rem 0 auto; }
+}
+@media (max-width: 450px) {
+  .resume-link { max-width: calc(100% - 2rem); margin: 1rem 1rem 0 auto; }
+}
+
+/* A apresentação ocupa a primeira tela; projetos começam após um respiro. */
+@media (min-width: 801px) {
+  .hero { min-height: 100vh; min-height: 100svh; }
+}
+.projects { margin-top: clamp(2rem, 4vh, 3rem); }
